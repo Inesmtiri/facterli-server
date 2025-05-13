@@ -1,8 +1,6 @@
 import User from '../models/User.js';
 import Client from '../models/Client.js';
 import bcrypt from 'bcryptjs';
-import sendEmail from '../utils/sendEmail.js';
-
 // 🔐 Connexion : Admin + Client
 export const login = async (req, res) => {
   const { email, password } = req.body;
